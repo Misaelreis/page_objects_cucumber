@@ -4,8 +4,7 @@ class AjaxPage < SitePrism::Page
     element :mensagem, '#div1'
 
     def clicar_btn
-        sleep(3)
-        wait_for_botao()
+        wait_for_botao
         botao.click
     end
 end
