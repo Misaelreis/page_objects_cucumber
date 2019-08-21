@@ -9,3 +9,4 @@ gem 'syntax'
 gem 'rubocop'
 gem 'byebug'
 gem 'date'
+gem "nokogiri", ">= 1.10.4"
