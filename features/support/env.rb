@@ -16,7 +16,7 @@ Capybara.register_driver :selenium do |app|
         Capybara::Selenium::Driver.new(app, :browser => :chrome)
 
     elsif BROWSER.eql?('chrome_headless')
-        Capybara::Selenium::Driver.new(app, :browser => :chrome,
+        Capybara::Selenium::Driver.new(app, :browser =>:chrome,
         desired_capabilities: Selenium::WebDriver::Remote::Capabilities.chrome(
         'chromeOptions' => {'args' =>['--headless', 'disable-gpu']}
         )
@@ -36,7 +36,7 @@ Capybara.register_driver :selenium do |app|
 end
 
 Capybara.configure do |config|
-    config.default_driver = :selenium
+    config.default_driver = :selenium_headless
     config.app_host = CONFIG['url_padrao']
     config.default_max_wait_time = 5
 end
