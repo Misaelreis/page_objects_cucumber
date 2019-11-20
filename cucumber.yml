@@ -10,6 +10,6 @@ chrome_headless: BROWSER=chrome_headless
 #relatório
 html: --format html --out=reports/relatorio.html
 #firefox: BROWSER=firefox
-#safari: BROWSER=safari
+#safari: BROWSER=Safari
 #ie: BROWSER=ie
 #poltergeist: BROWSER=poltergeist
